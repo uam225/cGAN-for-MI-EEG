@@ -42,7 +42,7 @@ class EEGFeatureDataset(Dataset):
         feature_sample = torch.tensor(self.feature_samples[idx], dtype=torch.float32)  # Convert to float32
         return data_sample, feature_sample
 
-data_dir = '/Users/umairarshad/SHU/or_data/mat'
+'''data_dir = '/Users/umairarshad/SHU/or_data/mat'
 feature_dir = '/Users/umairarshad/SHU/or_data/features'  
 subjects = range(6, 11)  
 sessions = range(1, 6)  
@@ -52,11 +52,12 @@ data_loader = DataLoader(dataset, batch_size=32, shuffle=True)
 
 type(dataset)
 
-"""mat_data = sio.loadmat('/Users/umairarshad/SHU/or_data/mat/sub-001_ses-01_task_motorimagery_eeg.mat')
+mat_data = sio.loadmat('/Users/umairarshad/SHU/or_data/mat/sub-001_ses-01_task_motorimagery_eeg.mat')
 data = mat_data['data']
 print(data.shape)
 
-features = np.load(feature_dir + '/sub_1_ses_1_fold_1_train_features.npy')
+features = np.load(feature_dir + '/sub_4_ses_1_fold_1_train_features.npy')
+features.shape
 min_trials = min(data.shape[0], features.shape[0]) 
 data_samples_check = np.zeros((min_trials,32000))#[]
 features_samples_check = np.zeros((min_trials,10))#[]
@@ -69,4 +70,4 @@ for trial in range(min_trials):
     #features_samples_check.append(features[trial])
 print(flattened_data.shape)
 print(data_samples_check.shape)
-print(features_samples_check.shape)"""
+print(features_samples_check.shape)'''

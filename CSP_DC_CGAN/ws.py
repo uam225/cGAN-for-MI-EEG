@@ -38,10 +38,10 @@ def train_test(sub_id, test_session, data_path, k_fold=10):
     aver_score = np.average(scores)
     return aver_score
 
-'''import numpy as np
+import numpy as np
 
 # Replace 'feature_file_path' with the actual path to one of your saved feature files
-feature_file_path = '/Users/umairarshad/SHU/or_data/features/sub_1_ses_2_fold_1_train_features.npy'
+feature_file_path = '/Users/umairarshad/SHU/or_data/features/sub_6_ses_1_fold_1_train_features.npy'
 
 # Load the features from the file
 features = np.load(feature_file_path)
@@ -54,7 +54,7 @@ print("Data type of the features array:", features.dtype)
 
 # Print the first few elements to see a sample of the data
 print("First few features:")
-print(features[:5])'''
+print(features[:5])
 
 '''import mne
 import scipy.io
