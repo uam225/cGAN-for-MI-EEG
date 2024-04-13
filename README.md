@@ -1,1 +1,1 @@
-# DCCGAN-for-MI-EEG
+# Conditional GAN for MI EEG
